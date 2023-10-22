@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treine me</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+
+  <body>
+
+    <div id="page">
+
+      <header>
+
+          <!-- Nav é uma semântica para usar em área de navegação dos site e usa-la como class não é semanticamente correto. -->
+
+        <nav>
+
+                <!-- No 'ALT' deveria ser transcrito o que é a imagem para atingir pessoas com algum tipo de deficiência, ou, até mesmo caso por algum BUG ou erro do desenvolvedor a imagem não carregue na página. -->
+
+                <img src="images/logo.svg" alt="Treine.me" />
+
+              </a>
+
+              <!-- Para se criar uma lista há uma TAG semantica para isso (UL ou OL), não havendo a necessidade - e sendo semanticamente incorreto - fazer por meio da criação de uma DIV -->
+
+                <ul>
+                  <a href="#">Home</a>
+                  <a href="#">Sobre</a>
+                  <a href="#">Treinar</a>
+                </ul>
+          
+              <!-- Uma class, assim como um ID, não deve ser utilizado(a) no fechamento de uma TAG, mas sim, na abertura da mesma. -->
+        </nav>
+
+      </header>
+
+      <!-- MAIN é uma TAG semântica para o que vira no corpo (estrutura) da página. Sendo assim, é semanticamente incorreto cria-la por meio de uma DIV -->
+      <main>
+
+          <div>
+
+            <!-- Para textos há outras TAG's mais interessantes como <p>. Caso queira a uma importância de título para um determinado texto, por ser usados os <H1's> dentro de sua hierarquia. -->
+
+            <h1>Treinos <span>exclusivos</span> para você!</h1>
+
+            <!-- Para criação de um subtítulo, pode-se ser aplicado através de um parágrafo, ou, como dito acima, através dos H1's dentro da hierarquia desejada. -->
+              <p>
+                Nós criamos treinos <strong>exclusivos e únicos para você.</strong>
+                
+                </br>
+                Invista no seu corpo e <strong>tenha muito mais performance</strong> e qualidade de vida.
+              </p>
+            
+              <!-- Para criar um botão, há uma TAG semânticamente adequada para tal. -->
+            
+                <button>
+                  <img src="images/whats.svg" alt="Ícone do whatsapp"> Comece já
+                </button>
+            
+          </div>
+
+          <img src="images/img.png" alt="Desenho de uma mulher pulando corta numa academia.">
+
+      </main>
+
+      <!-- O FOOTER é uma TAG existente para dar semântica para o 'RODAPÉ' de uma página. Sendo assim, é semânticamente errado utilizar uma DIV para isso.-->
+      <footer>
+        fale conosco no instagram <a href="https://instagram.com/treineme" target="_blank">@treine.me</a>
+      </footer>
+      
+    </div>
+
+    <img id="balls" src="images/balls.svg" alt="Bolinhas decorativas verdes no canto inferior direito da página.">
+  </body>
+</html>
